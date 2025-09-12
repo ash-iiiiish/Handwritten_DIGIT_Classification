@@ -1,60 +1,85 @@
-# Handwritten Digit Classification 🖊️🔢
+# 📘 Handwritten Digit Classification
 
-This repository implements a **Handwritten Digit Classification** model using the **MNIST dataset**. The project demonstrates deep learning with **PyTorch**, along with **Optuna hyperparameter tuning**, and evaluation using `scikit-learn`.  
+## 📝 Introduction
+This project implements a **Handwritten Digit Classification** system using the **MNIST dataset**. The model is trained to recognize digits from `0–9` based on grayscale images of handwritten characters. The project demonstrates the application of deep learning techniques for image recognition tasks.
 
-The model achieves **97% accuracy on the test dataset** and **98% accuracy on the training dataset**.
+## 📂 Table of Contents
+- [Introduction](#-introduction)  
+- [Features](#-features)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [Project Structure](#-project-structure)  
+- [Dependencies](#-dependencies)  
+- [Examples](#-examples)  
+- [Troubleshooting](#-troubleshooting)  
+- [Contributors](#-contributors)  
+- [License](#-license)  
 
----
+## ✨ Features
+- Classification of handwritten digits (`0–9`)  
+- Implementation in **Jupyter Notebook** for easy experimentation  
+- Deep learning model trained using standard datasets  
+- Visualizations of training performance and predictions  
 
-## 🚀 Features
+## ⚙️ Installation
+Clone the repository and install the required dependencies:
 
-- Uses the **MNIST dataset** (28×28 grayscale images of handwritten digits 0–9)  
-- **CNN (Convolutional Neural Network)** architecture for digit recognition  
-- **Hyperparameter optimization with Optuna**  
-- Evaluation metrics using **scikit-learn** (accuracy, confusion matrix, etc.)  
-- Visualization of training and validation metrics  
-
----
-
-# Requirements file
+```bash
+git clone https://github.com/129Ashish/Handwritten_DIGIT_Classification.git
+cd Handwritten_DIGIT_Classification
 pip install -r requirements.txt
+```
 
+Make sure you have **Python 3.7+** installed.
 
-# 🔎 Hyperparameter Tuning with Optuna
+## 🚀 Usage
+1. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook Handwritten_DIGIT_Classification.ipynb
+   ```
+2. Run the cells step by step to:
+   - Load and preprocess the dataset  
+   - Train the neural network model  
+   - Evaluate accuracy on test data  
+   - Visualize predictions  
 
-This project integrates Optuna for automatic hyperparameter optimization.
-The tuning process explored:
+## 📁 Project Structure
+```
+Handwritten_DIGIT_Classification/
+│── Handwritten_DIGIT_Classification.ipynb  # Main notebook
+│── requirements.txt                        # Project dependencies
+│── README.md                               # Documentation
+```
 
-Learning rate
+## 📦 Dependencies
+Main dependencies (see `requirements.txt` for full list):
+- numpy  
+- matplotlib  
+- tensorflow / keras (deep learning framework)  
+- jupyter  
 
-Optimizer choice (SGD, Adam, RMSprop, etc.)
+Install all dependencies via:
+```bash
+pip install -r requirements.txt
+```
 
-Dropout rate
+## 📊 Examples
+- After training, the model achieves high accuracy on the MNIST dataset.  
+- Example prediction output:
 
-Batch size
+| Input Image | Predicted Digit |
+|-------------|-----------------|
+| 🖊️ 7        | 7               |
+| 🖊️ 3        | 3               |
+| 🖊️ 0        | 0               |
 
-Number of filters in CNN layers
+## 🛠️ Troubleshooting
+- **Jupyter not found**: Install with `pip install notebook`.  
+- **Module errors**: Re-run `pip install -r requirements.txt`.  
+- **GPU not detected**: Ensure TensorFlow GPU version and CUDA drivers are installed.  
 
-Optuna automatically selected the best-performing configuration.
+## 👨‍💻 Contributors
+- [@129Ashish](https://github.com/129Ashish)  
 
-# 🏋️ Training
-
-Optimizer: (best found by Optuna, e.g., Adam/SGD)
-
-Loss Function: CrossEntropyLoss
-
-Batch Size: Tuned
-
-Epochs: Tuned via Optuna
-
-Final Accuracy:
-
-Train: 98%
-
-Test: 97%
-
-
-# 🤝 Contributing
-
-Contributions are welcome!
-Feel free to open an issue or submit a pull request for improvements, new features, or bug fixes.
+## 📜 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
