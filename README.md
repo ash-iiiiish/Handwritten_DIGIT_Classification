@@ -55,7 +55,7 @@ Handwritten_DIGIT_Classification/
 Main dependencies (see `requirements.txt` for full list):
 - numpy  
 - matplotlib  
-- tensorflow / keras (deep learning framework)  
+- Pytorch (deep learning framework)  
 - jupyter  
 
 Install all dependencies via:
