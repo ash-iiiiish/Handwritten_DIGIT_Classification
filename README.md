@@ -16,7 +16,7 @@ The model achieves **97% accuracy on the test dataset** and **98% accuracy on th
 
 ---
 
-# Reqiorements file
+# Requirements file
 pip install -r requirements.txt
 
 
