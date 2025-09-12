@@ -54,7 +54,7 @@ Train: 98%
 Test: 97%
 
 
-🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 Feel free to open an issue or submit a pull request for improvements, new features, or bug fixes.
