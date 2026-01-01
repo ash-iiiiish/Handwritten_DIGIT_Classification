@@ -79,5 +79,6 @@ pip install -r requirements.txt
 - **GPU not detected**: Ensure TensorFlow GPU version and CUDA drivers are installed.  
 
 ## 👨‍💻 Contributors
-- [@129Ashish](https://github.com/129Ashish)  
+ ash-iiiiish
+
 
